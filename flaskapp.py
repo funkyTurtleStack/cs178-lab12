@@ -38,6 +38,15 @@ def analyze(word):
     for letter in word.upper():
         if(letter == "A" or letter == "E" or letter == "I" or letter == "O" or letter == "U"):
             vowelCount += 1
+    
+    #Make reversed word
+    reversedWord = ""
+    index = len(word) - 1
+    while index >= 0
+        reversedWordword += word[index]
+        i -= 1
+
+
 
 
     return render_template('analyze.html', word=word, characterCount=characterCount, vowelCount=vowelCount)
