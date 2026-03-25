@@ -46,9 +46,6 @@ def analyze(word):
         reversedWord += word[index]
         index -= 1
 
-
-
-
     return render_template('analyze.html', word=word, characterCount=characterCount, vowelCount=vowelCount, reversedWord=reversedWord)
     
 
