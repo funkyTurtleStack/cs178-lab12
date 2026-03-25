@@ -36,7 +36,7 @@ def analyze(word):
     #Calculate numVowels
     vowelCount = 0
     for letter in word.upper():
-        if(letter == "A" or "E" or "I" or "O" or "U"):
+        if(letter == "A" or letter == "E" or letter == "I" or letter == "O" or letter == "U"):
             vowelCount += 1
 
 
