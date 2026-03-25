@@ -42,14 +42,14 @@ def analyze(word):
     #Make reversed word
     reversedWord = ""
     index = len(word) - 1
-    while index >= 0
-        reversedWordword += word[index]
-        i -= 1
+    while index >= 0:
+        reversedWord += word[index]
+        index -= 1
 
 
 
 
-    return render_template('analyze.html', word=word, characterCount=characterCount, vowelCount=vowelCount)
+    return render_template('analyze.html', word=word, characterCount=characterCount, vowelCount=vowelCount, reversedWord=reversedWord)
     
 
 
