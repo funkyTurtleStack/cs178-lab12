@@ -30,8 +30,17 @@ def hello(name):
 # ============================================================
 @app.route('/analyze/<word>/')
 def analyze(word):
+    #Calculate characterCount
     characterCount = len(word)
-    return f"Character Count: {characterCount}"
+
+    #Calculate numVowels
+    numVowels = 0
+    for letter in word.upper():
+        if(letter == "A" or "E" or "I" or "O" or "U"):
+            numVowels += 1
+
+
+    return render_template('analyze.html', word=word, characterCount=characterCount, numVowels=numVowels)
     
 
 
